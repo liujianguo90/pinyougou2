@@ -16,4 +16,7 @@ public interface BrandService {
      * 查询所有品牌
      */
     public List<TbBrand> findAll();
+
+
+    public void test();
 }
