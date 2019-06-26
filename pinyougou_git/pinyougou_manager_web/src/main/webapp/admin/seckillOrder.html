@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 页面meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>秒杀订单管理</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/Vue/axios-0.18.0.js"></script>
+    <script src="../plugins/Vue/vuejs-2.5.16.js"></script>
+
+
+</head>
+
+<body class="hold-transition skin-red sidebar-mini">
+<!-- .box-body -->
+
+<div class="box-header with-border">
+    <h3 class="box-title">秒杀订单查看审核</h3>
+</div>
+<div class="box-body">
+    <div id="app">
+        <!-- 数据表格 -->
+        <div class="table-box">
+
+            <!--工具栏-->
+            <div class="pull-left">
+                <div class="form-group form-inline">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" title="删除秒杀"><i class="fa fa-trash-o"></i> 删除
+                        </button>
+                        <button type="button" class="btn btn-default" title="订单审核"><i
+                                class="fa fa-check"></i> 订单审核
+                        </button>
+                        <button type="button" class="btn btn-default" title="秒杀驳回"><i class="fa fa-ban"></i> 驳回</button>
+                        <button type="button" class="btn btn-default" title="刷新"><i class="fa fa-refresh"></i> 刷新</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-tools pull-right">
+                <div class="has-feedback">
+                    商品名称：<input>
+                    <button class="btn btn-default">查询</button>
+                </div>
+            </div>
+            <!--工具栏/-->
+            <!--数据列表-->
+            <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+                <thead>
+                <tr>
+                    <th class="" style="padding-right:0px">
+                        <input id="selall" type="checkbox" class="icheckbox_square-blue">
+                    </th>
+                    <th class="sorting_asc">秒杀商品ID</th>
+                    <th class="sorting">支付金额</th>
+                    <th class="sorting">用户</th>
+                    <th class="sorting">商家</th>
+                    <th class="sorting">创建时间</th>
+                    <th class="sorting">支付时间</th>
+                    <th class="sorting">状态</th>
+                    <th class="sorting">收货人地址</th>
+                    <th class="sorting">收货人电话</th>
+                    <th class="sorting">收货人</th>
+                    <th class="sorting">交易流水</th>
+                    <th class="text-center">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="order in seckillOrder">
+                    <td><input type="checkbox"></td>
+                    <td>{{order.id}}</td>
+                    <td>{{order.seckillId}}</td>
+                    <td>{{order.money}}</td>
+                    <td>{{order.userId}}</td>
+                    <td>{{order.createTime}}</td>
+                    <td>{{order.payTime}}</td>
+                    <td>{{order.status}}</td>
+                    <td>{{order.receiverAddress}}</td>
+                    <td>{{order.receiverMobile}}</td>
+                    <td>{{order.receiver}}</td>
+                    <td>{{order.transactionId}}</td>
+                    <td class="text-center">
+                        <button type="button" @click="add(seckill.id)" class="btn bg-olive btn-xs">详情</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <!--数据列表/-->
+        </div>
+        <!-- 数据表格 /-->
+    </div>
+</div>
+<!-- /.box-body -->
+
+
+</body>
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#app",
+        data: {
+            //秒杀商品List
+            seckillOrder: {},
+            //秒杀的数组
+            ids: []
+        },
+        methods: {
+            //审核秒杀商品
+            seckillPass: function () {
+                alert(this.ids);
+                axios.get("/seckillGoods/seckillPass.do?ids=" + this.ids).then(function (response) {
+                    if (response.data.success == true) {
+                        alert(response.data.message);
+                    } else {
+                        alert(response.data.message);
+                    }
+                    app.ids = []; //清空Ids
+                })
+            },
+            //查询所有的审核商品
+            findAll: function () {
+                axios.get("/seckillOrder/findAllSeckillOrder.do").then(function (response) {
+                    app.seckillOrder = response.data;
+                })
+            }
+        },
+        //开启时候调用
+        created: function () {
+            this.findAll();
+        }
+
+    })
+</script>
+
+</html>
