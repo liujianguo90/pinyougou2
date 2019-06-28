@@ -19,6 +19,18 @@ public class TbItemCat implements Serializable {
     private Long parentId;
 
     /**
+     * 品牌审核状态
+     */
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    /**
      * 类目名称
      */
     private String name;

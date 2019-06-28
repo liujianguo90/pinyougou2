@@ -15,6 +15,19 @@ public class TbBrand implements Serializable {
     private String name;
 
     /**
+     * 品牌审核状态
+     */
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    /**
      * 品牌首字母
      */
     @Column(name = "first_char")
@@ -81,6 +94,7 @@ public class TbBrand implements Serializable {
         sb.append(", id=").append(id);
         sb.append(", name=").append(name);
         sb.append(", firstChar=").append(firstChar);
+        sb.append(", status=").append(status);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 页面meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>模板申请</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- 导入vue文件-->
+    <script src="../plugins/Vue/vuejs-2.5.16.js"></script>
+    <!-- ajax文件-->
+    <script src="../plugins/Vue/axios-0.18.0.js"></script>
+    <!-- 分页插件-->
+    <script src="../plugins/Vue/pagination.js"></script>
+    <!-- vue逻辑代码-->
+    <script src="../js/controller/type_template_edit.js"></script>
+
+</head>
+
+<body class="hold-transition skin-red sidebar-mini">
+<!-- .box-body -->
+<div id="app">
+
+<div class="box-header with-border">
+    <h3 class="box-title">模板申请</h3>
+</div>
+
+<div class="box-body">
+
+    <!-- 数据表格 -->
+    <div class="table-box">
+
+        <!--工具栏-->
+        <div class="pull-left">
+            <div class="form-group form-inline">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default" title="新建" data-toggle="modal"
+                            data-target="#editModal"><i class="fa fa-file-o"></i> 新建
+                    </button>
+                    <button  @click="dele()" type="button" class="btn btn-default" title="删除"><i class="fa fa-trash-o"></i> 删除</button>
+                    <button @click="submitCheck()" type="button" class="btn btn-default" title="提交审核"><i class="fa fa-check"></i> 提交审核
+                    </button>
+                    <button type="button" class="btn btn-default" title="屏蔽" onclick='confirm("你确认要屏蔽吗？")'><i
+                            class="fa fa-ban"></i> 屏蔽
+                    </button>
+                    <button type="button" class="btn btn-default" title="刷新" onclick="window.location.reload();"><i
+                            class="fa fa-refresh"></i> 刷新
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="box-tools pull-right">
+            <div class="has-feedback">
+                状态：<select>
+                <option value="">全部</option>
+                <option value="0">未申请</option>
+                <option value="1">申请中</option>
+                <option value="2">审核通过</option>
+                <option value="3">已驳回</option>
+            </select>
+                商品名称：<input>
+                <button class="btn btn-default">查询</button>
+            </div>
+        </div>
+        <!--工具栏/-->
+
+        <!--数据列表-->
+        <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+            <thead>
+            <tr>
+                <th class="" style="padding-right:0px">
+                    <input id="selall" type="checkbox" class="icheckbox_square-blue">
+                </th>
+                <th class="sorting_asc">模板ID</th>
+                <th class="sorting">模板名称</th>
+                <th class="sorting">状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="template in list">
+                <td><input  type="checkbox" :value="template.id" v-model="ids"></td>
+                <td>{{template.id}}</td>
+                <td>{{template.name}}</td>
+                <td>
+                    <span v-if="template.status == '0'">未申请</span>
+                    <span v-if="template.status == '1'">申请中</span>
+                    <span v-if="template.status == '2'">审核通过</span>
+                    <span v-if="template.status == '3'">已驳回</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <!--数据列表/-->
+
+
+    </div>
+    <!-- 数据表格 /-->
+    <!--分页插件{pages:总页数,current.sync:当前页,navpage:分页插件刷新数据调用的方法}
+               其中声明findPage要注意接收当前页的变量：findPage(pageNo)
+               注意：上面提到的变量需要在Vue中声明-->
+    <navigation :pages="pages" :current.sync="pageNo" @navpage="findPage"></navigation>
+
+</div>
+<!-- /.box-body -->
+
+<!-- 编辑窗口 -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">品牌编辑</h3>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered table-striped" width="800px">
+                    <tr>
+                        <td>模板名称</td>
+                        <td><input v-model="entity.name" class="form-control" placeholder="模板名称"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button @click="add()" class="btn btn-success" data-dismiss="modal" aria-hidden="true">保存</button>
+                <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>

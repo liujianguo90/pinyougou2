@@ -21,6 +21,18 @@ public class TbTypeTemplate implements Serializable {
     private String specIds;
 
     /**
+     * 品牌审核状态
+     */
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    /**
      * 关联品牌
      */
     @Column(name = "brand_ids")

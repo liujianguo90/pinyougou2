@@ -21,6 +21,18 @@ public class TbSpecification implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
+     * 品牌审核状态
+     */
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    /**
      * 获取主键
      *
      * @return id - 主键

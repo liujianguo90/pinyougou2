@@ -1,19 +1,63 @@
 package com.pinyougou.sellergoods.service;
 
+import com.pinyougou.entity.PageResult;
 import com.pinyougou.pojo.TbBrand;
+
 
 import java.util.List;
 
 /**
- * 品牌信息业务逻辑接口
+ * 业务逻辑接口
  * @author Steven
- * @version 1.0
- * @description com.pinyougou.sellergoods.service
- * @date 2019-5-21
+ *
  */
 public interface BrandService {
-    /**
-     * 查询所有品牌
+	/**
+	 * 批量提交审核
+	 * @param ids
+	 * @return
+	 */
+	public void submitCheck(int[] ids);
+
+	/**
+	 * 返回全部列表
+	 * @return
+	 */
+	public List<TbBrand> findAll();
+	
+	
+	/**
+     * 分页查询列表
+     * @return
      */
-    public List<TbBrand> findAll();
+    public PageResult<TbBrand> findPage(int pageNum, int pageSize, TbBrand brand);
+	
+	
+	/**
+	 * 增加
+	*/
+	public void add(TbBrand brand);
+	
+	
+	/**
+	 * 修改
+	 */
+	public void update(TbBrand brand);
+	
+
+	/**
+	 * 根据ID获取实体
+	 * @param id
+	 * @return
+	 */
+	public TbBrand getById(Long id);
+	
+	
+	/**
+	 * 批量删除
+	 * @param ids
+	 */
+	public void delete(Long[] ids);
+
+	
 }
