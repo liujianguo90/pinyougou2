@@ -60,8 +60,8 @@ public class BrandServiceImpl implements BrandService {
         //构建查询条件
         Example example = new Example(TbBrand.class);
         Example.Criteria criteria = example.createCriteria();
-		
-		if(brand!=null){			
+
+		if(brand!=null){
 						//如果字段不为空
 			if (brand.getName()!=null && brand.getName().length()>0) {
 				criteria.andLike("name", "%" + brand.getName() + "%");
@@ -70,7 +70,7 @@ public class BrandServiceImpl implements BrandService {
 			if (brand.getFirstChar()!=null && brand.getFirstChar().length()>0) {
 				criteria.andLike("firstChar", "%" + brand.getFirstChar() + "%");
 			}
-	
+
 		}
 
         //查询数据
@@ -81,7 +81,7 @@ public class BrandServiceImpl implements BrandService {
         //获取总页数
         PageInfo<TbBrand> info = new PageInfo<TbBrand>(list);
         result.setPages(info.getPages());
-		
+
 		return result;
 	}
 
@@ -92,18 +92,18 @@ public class BrandServiceImpl implements BrandService {
 	public void add(TbBrand brand) {
 		//设置默认为未审核
 		brand.setStatus("0");
-		brandMapper.insertSelective(brand);		
+		brandMapper.insertSelective(brand);
 	}
 
-	
+
 	/**
 	 * 修改
 	 */
 	@Override
 	public void update(TbBrand brand){
 		brandMapper.updateByPrimaryKeySelective(brand);
-	}	
-	
+	}
+
 	/**
 	 * 根据ID获取实体
 	 * @param id
@@ -135,6 +135,6 @@ public class BrandServiceImpl implements BrandService {
 		//跟据查询条件删除数据
         brandMapper.deleteByExample(example);
 	}
-	
-	
+
+
 }

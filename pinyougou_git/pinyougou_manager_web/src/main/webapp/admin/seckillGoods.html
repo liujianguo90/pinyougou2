@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 页面meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>秒杀商品管理</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/Vue/axios-0.18.0.js"></script>
+    <script src="../plugins/Vue/vuejs-2.5.16.js"></script>
+
+
+</head>
+
+<body class="hold-transition skin-red sidebar-mini">
+<!-- .box-body -->
+
+<div class="box-header with-border">
+    <h3 class="box-title">秒杀商品审核</h3>
+</div>
+<div class="box-body">
+    <div id="app">
+        <!-- 数据表格 -->
+        <div class="table-box">
+
+            <!--工具栏-->
+            <div class="pull-left">
+                <div class="form-group form-inline">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" title="删除秒杀"><i class="fa fa-trash-o"></i> 删除
+                        </button>
+                        <button type="button" @click="seckillPass()" class="btn btn-default" title="秒杀通过"><i
+                                class="fa fa-check"></i> 秒杀通过
+                        </button>
+                        <!-- 编辑窗口 -->
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#editModal" title="查看失效商品"><i
+                                class="fa fa-check"></i> 查看失效商品
+                        </button>
+                        <button type="button" class="btn btn-default" title="秒杀驳回"><i class="fa fa-ban"></i> 驳回</button>
+                        <button type="button" class="btn btn-default" title="刷新"><i class="fa fa-refresh"></i> 刷新
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-tools pull-right">
+                <div class="has-feedback">
+                    商品名称：<input>
+                    <button class="btn btn-default">查询</button>
+                </div>
+            </div>
+            <!--工具栏/-->
+            <!--数据列表-->
+            <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+                <thead>
+                <tr>
+                    <th class="" style="padding-right:0px">
+                        <input id="selall" type="checkbox" class="icheckbox_square-blue">
+                    </th>
+                    <th class="sorting_asc">商品ID</th>
+                    <th class="sorting">商品名称</th>
+                    <th class="sorting">原价格</th>
+                    <th class="sorting">秒杀价格</th>
+                    <th class="sorting">商家ID</th>
+                    <th class="sorting">审核日期</th>
+                    <th class="sorting">审核状态</th>
+                    <th class="sorting">开始时间</th>
+                    <th class="sorting">结束时间</th>
+                    <th class="sorting">秒杀商品数</th>
+                    <th class="sorting">剩余库存数</th>
+                    <th class="text-center">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="seckill in seckillGoods">
+                    <td><input :value="seckill.id" v-model="ids" type="checkbox"></td>
+                    <td>{{seckill.id}}</td><!--商品Id-->
+                    <td>{{seckill.title}}</td><!--商品名称-->
+                    <td>{{seckill.price}}</td><!--原来的价格-->
+                    <td>{{seckill.costPrice}}</td><!--秒杀价格-->
+                    <td>{{seckill.sellerId}}</td><!--商家ID-->
+                    <td>{{seckill.checkTime}}</td><!--审核日期-->
+                    <td>
+                        {{seckill.status}}
+                    </td><!--审核状态--> <!--v-if=" '0'  ? '审核通过':'审核未通过'"-->
+                    <td>{{seckill.startTime}}</td><!--开始时间-->
+                    <td>{{seckill.endTime}}</td><!--结束时间-->
+                    <td>{{seckill.num}}</td><!--秒杀商品数-->
+                    <td>{{seckill.stockCount}}</td><!--剩余库存-->
+                    <td class="text-center">
+                        <button type="button" @click="add(seckill.id)" class="btn bg-olive btn-xs">详情</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <!--数据列表/-->
+        </div>
+        <!-- 数据表格 /-->
+    </div>
+    <!--模态框-->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">过往秒杀商品</h3>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped"  width="800px">
+                        <tr>
+                            <td>品牌名称</td>
+                            <td><input  class="form-control" placeholder="品牌名称" >  </td>
+                        </tr>
+                        <tr>
+                            <td>首字母</td>
+                            <td><input  class="form-control" placeholder="首字母">  </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" @click="goToSeckill()" data-dismiss="modal" aria-hidden="true">保存</button>
+                    <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.box-body -->
+
+</body>
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#app",
+        data: {
+            //秒杀商品List
+            seckillGoods: {},
+            //秒杀的数组
+            ids: []
+            //0未审核，1审核通过，2审核不通过,3删除
+        },
+        methods: {
+            //还原失效秒杀的商品
+            goToSeckill:function(){
+                axios.get("/seckillGoods/goToSeckill.do"+this.ids).then(function (response) {
+                    app.ids=[];
+                    this.findAll();
+                })
+            },
+            //审核秒杀商品
+            seckillPass: function () {
+                axios.get("/seckillGoods/seckillPass.do?ids=" + this.ids).then(function (response) {
+                    if (response.data.success == true) {
+                        alert(response.data.message);
+                    } else {
+                        alert(response.data.message);
+                    }
+                    app.ids = []; //清空Ids
+                })
+            },
+            //查询所有的审核商品
+            findAll: function () {
+                axios.get("/seckillGoods/findAll.do").then(function (response) {
+                    app.seckillGoods = response.data;
+                })
+            }
+        },
+        //开启时候调用
+        created: function () {
+            this.findAll();
+        }
+
+    })
+</script>
+
+</html>
