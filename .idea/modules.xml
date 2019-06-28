@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pinyougou_git/pinyougou_sellergoods_service/src/main/main.iml" filepath="$PROJECT_DIR$/pinyougou_git/pinyougou_sellergoods_service/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou_git/pinyougou_dao/src/main/java/main1.iml" filepath="$PROJECT_DIR$/pinyougou_git/pinyougou_dao/src/main/java/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou_git/pinyougou_sellergoods_interface/src/main/main2.iml" filepath="$PROJECT_DIR$/pinyougou_git/pinyougou_sellergoods_interface/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou_git/pinyougou_pojo/src/main/main3.iml" filepath="$PROJECT_DIR$/pinyougou_git/pinyougou_pojo/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou_git/pinyougou_manager_web/src/main/main4.iml" filepath="$PROJECT_DIR$/pinyougou_git/pinyougou_manager_web/src/main/main4.iml" />
+    </modules>
+  </component>
+</project>
