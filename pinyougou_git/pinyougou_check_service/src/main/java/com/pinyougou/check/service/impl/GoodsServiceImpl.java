@@ -112,8 +112,7 @@ public class GoodsServiceImpl implements GoodsService {
 			}
 	
 		}
-		//排序
-		example.setOrderByClause("price asc");
+
         //查询数据
         List<TbGoods> list = goodsMapper.selectByExample(example);
         //返回数据列表
