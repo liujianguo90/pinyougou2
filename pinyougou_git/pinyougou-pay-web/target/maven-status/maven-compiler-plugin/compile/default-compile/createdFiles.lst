@@ -1,0 +1,4 @@
+util\IdWorker.class
+com\pinyougou\pay\controller\service\UserDetailsServiceImpl.class
+com\pinyougou\pay\controller\PayController.class
+util\FastDFSClient.class
