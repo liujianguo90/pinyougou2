@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbBrandMapper.java
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbAreasMapper.java
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbOrderMapper.java
@@ -20,3 +21,27 @@ E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_dao\src\main\java\co
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbSpecificationMapper.java
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbGoodsMapper.java
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbSeckillGoodsMapper.java
+=======
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbSpecificationOptionMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbAddressMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbGoodsDescMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbProvincesMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbContentCategoryMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbContentMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbOrderMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbCitiesMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbItemMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbSeckillGoodsMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbAreasMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbFreightTemplateMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbOrderItemMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbUserMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbBrandMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbTypeTemplateMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbItemCatMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbSellerMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbSeckillOrderMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbSpecificationMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbPayLogMapper.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_dao\src\main\java\com.pinyougou.mapper\TbGoodsMapper.java
+>>>>>>> remotes/kk/master

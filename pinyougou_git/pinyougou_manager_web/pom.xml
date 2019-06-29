@@ -80,6 +80,10 @@
             <artifactId>servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
+<<<<<<< HEAD
+
+=======
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
         <dependency>
             <groupId>com.pinyougou</groupId>
             <artifactId>pinyougou_common</artifactId>
@@ -90,6 +94,20 @@
             <artifactId>pinyougou_sellergoods_interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+<<<<<<< HEAD
+        <dependency>
+            <groupId>com.pinyougou</groupId>
+            <artifactId>pinyougou_page_interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.pinyougou</groupId>
+            <artifactId>pinyougou_search_interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+=======
     </dependencies>
     <build>
         <plugins>
@@ -105,4 +123,5 @@
         </plugins>
     </build>
 
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
 </project>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_manager_web" />
@@ -8,6 +9,18 @@
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
+=======
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_check_service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_check_web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_manager_web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_page_service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_page_web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_search_service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_sellergoods_service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_shop_web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_to_seller" />
+>>>>>>> remotes/kk/master
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -17,6 +30,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/pinyougou-shop-web/pom.xml" />
       </set>
     </option>
@@ -86,4 +100,14 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+=======
+        <option value="$PROJECT_DIR$/pingyougou_shop_check/pom.xml" />
+        <option value="$PROJECT_DIR$/pingyougou_to_service_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou_to_seller/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougoucheck_service/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+>>>>>>> remotes/kk/master
 </project>

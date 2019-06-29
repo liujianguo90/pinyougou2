@@ -1,4 +1,7 @@
 com\pinyougou\sellergoods\service\BrandService.class
+<<<<<<< HEAD
 com\pinyougou\sellergoods\service\ItemCatService.class
 com\pinyougou\sellergoods\service\TypeTemplateService.class
 com\pinyougou\sellergoods\service\SpecificationService.class
+=======
+>>>>>>> remotes/kk/master

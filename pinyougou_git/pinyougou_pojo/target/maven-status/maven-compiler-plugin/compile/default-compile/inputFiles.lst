@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\entity\Result.java
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbFreightTemplate.java
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbOrder.java
@@ -23,3 +24,27 @@ E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_pojo\src\main\java\c
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbItem.java
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbSpecificationOption.java
 E:\idea_file\chuanzhizuidiaoxiangmu\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\entity\PageResult.java
+=======
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbContent.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbFreightTemplate.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbItemCat.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbGoodsDesc.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbProvinces.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbAddress.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbSeckillOrder.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbSeller.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbSpecificationOption.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbOrder.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbOrderItem.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbItem.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbSeckillGoods.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbSpecification.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbAreas.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbTypeTemplate.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbBrand.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbGoods.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbUser.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbContentCategory.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbCities.java
+E:\java\devolop\software\IdeaWorkSpaceEmpty\pinyougou_diyi\pinyougou_git\pinyougou_pojo\src\main\java\com\pinyougou\pojo\TbPayLog.java
+>>>>>>> remotes/kk/master

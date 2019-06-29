@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--dubbo的配置  组件扫描由dubbo来扫-->
+    <!--服务提供者名称-->
+    <dubbo:application name="pinyougou-user-service"></dubbo:application>
+    <!--配置注册中心-->
+    <dubbo:registry address="192.168.25.133" port="2181" protocol="zookeeper"></dubbo:registry>
+    <!--配置端口，默认20880-->
+    <dubbo:protocol name="dubbo" port="20882"></dubbo:protocol>
+    <dubbo:provider timeout="1000000"></dubbo:provider>
+    <!--注解驱动-->
+    <dubbo:annotation package="com.pinyougou.user.service"></dubbo:annotation>
+</beans>

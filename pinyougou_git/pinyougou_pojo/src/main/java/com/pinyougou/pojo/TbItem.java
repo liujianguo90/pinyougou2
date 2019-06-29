@@ -13,7 +13,10 @@ public class TbItem implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+<<<<<<< HEAD
+=======
 
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
     /**
      * 商品标题
      */

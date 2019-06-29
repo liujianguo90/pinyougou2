@@ -11,6 +11,7 @@
             http://www.springframework.org/schema/mvc   
             http://www.springframework.org/schema/mvc/spring-mvc.xsd 
             http://www.springframework.org/schema/cache  
+<<<<<<< HEAD
             http://www.springframework.org/schema/cache/spring-cache.xsd">  
 
    <context:property-placeholder location="classpath*:properties/*.properties" />   
@@ -36,4 +37,8 @@
         <!--<property name="enableTransactionSupport" value="true" />-->
     <!--</bean>-->
       
+=======
+            http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+>>>>>>> remotes/kk/master
 </beans>  

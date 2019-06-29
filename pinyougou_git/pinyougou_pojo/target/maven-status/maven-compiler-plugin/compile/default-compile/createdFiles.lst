@@ -1,10 +1,16 @@
 com\pinyougou\pojo\TbItemCat.class
 com\pinyougou\pojo\TbContentCategory.class
 com\pinyougou\pojo\TbProvinces.class
+<<<<<<< HEAD
+=======
+com\pinyougou\pojo\TbUser.class
+com\pinyougou\pojo\TbCities.class
+>>>>>>> remotes/kk/master
 com\pinyougou\pojo\TbOrder.class
 com\pinyougou\pojo\TbPayLog.class
 com\pinyougou\pojo\TbSpecificationOption.class
 com\pinyougou\pojo\TbFreightTemplate.class
+<<<<<<< HEAD
 com\pinyougou\entity\PageResult.class
 com\pinyougou\pojo\TbTypeTemplate.class
 com\pinyougou\pojo\TbBrand.class
@@ -22,4 +28,18 @@ com\pinyougou\pojo\TbGoods.class
 com\pinyougou\pojo\TbGoodsDesc.class
 com\pinyougou\pojo\TbSpecification.class
 com\pinyougou\pojo\TbOrderItem.class
+=======
+com\pinyougou\pojo\TbTypeTemplate.class
+com\pinyougou\pojo\TbContent.class
+com\pinyougou\pojo\TbBrand.class
+com\pinyougou\pojo\TbAddress.class
+com\pinyougou\pojo\TbItem.class
+com\pinyougou\pojo\TbAreas.class
+com\pinyougou\pojo\TbGoods.class
+com\pinyougou\pojo\TbGoodsDesc.class
+com\pinyougou\pojo\TbSeckillGoods.class
+com\pinyougou\pojo\TbSpecification.class
+com\pinyougou\pojo\TbOrderItem.class
+com\pinyougou\pojo\TbSeckillOrder.class
+>>>>>>> remotes/kk/master
 com\pinyougou\pojo\TbSeller.class

@@ -30,6 +30,7 @@ public interface BrandService {
      * 分页查询列表
      * @return
      */
+<<<<<<< HEAD
     public PageResult<TbBrand> findPage(int pageNum, int pageSize, TbBrand brand);
 	
 	
@@ -44,6 +45,11 @@ public interface BrandService {
 	 */
 	public void update(TbBrand brand);
 	
+=======
+    public List<TbBrand> findAll();
+<<<<<<< HEAD
+=======
+>>>>>>> remotes/kk/master
 
 	/**
 	 * 根据ID获取实体
@@ -59,5 +65,10 @@ public interface BrandService {
 	 */
 	public void delete(Long[] ids);
 
+<<<<<<< HEAD
 	
+=======
+    public void test();
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
+>>>>>>> remotes/kk/master
 }
