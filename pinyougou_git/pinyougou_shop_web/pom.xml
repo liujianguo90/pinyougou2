@@ -91,4 +91,20 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+<<<<<<< HEAD
+=======
+    <build>
+        <plugins>
+            <!-- 配置Tomcat插件 -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <path>/</path>
+                    <port>8082</port>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
 </project>

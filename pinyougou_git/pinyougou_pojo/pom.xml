@@ -18,6 +18,7 @@
             <artifactId>persistence-api</artifactId>
             <version>1.0</version>
         </dependency>
+<<<<<<< HEAD
         <!-- fastjson处理工具包 -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -30,6 +31,8 @@
             <!--由于spring-es这个包依赖很多，所以我们只在编译和测试的时候用-->
             <scope>provided</scope>
         </dependency>
+=======
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
     </dependencies>
 
 </project>

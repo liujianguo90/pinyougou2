@@ -61,7 +61,10 @@
     <orderEntry type="module" module-name="pinyougou_sellergoods_interface" />
     <orderEntry type="module" module-name="pinyougou_pojo" />
     <orderEntry type="library" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
+<<<<<<< HEAD
     <orderEntry type="module" module-name="pinyougou_page_interface" />
     <orderEntry type="module" module-name="pinyougou_search_interface" />
+=======
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
   </component>
 </module>

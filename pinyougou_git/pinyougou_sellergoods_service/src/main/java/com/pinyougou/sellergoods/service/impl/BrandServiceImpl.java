@@ -23,4 +23,12 @@ public class BrandServiceImpl implements BrandService {
     public List<TbBrand> findAll() {
         return brandMapper.select(null);
     }
+<<<<<<< HEAD
+=======
+
+    @Override
+    public void test() {
+        System.out.println("test");
+    }
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
 }

@@ -71,6 +71,7 @@
     <orderEntry type="library" name="Maven: com.github.miemiedev:mybatis-paginator:1.2.15" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.32" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:druid:1.0.9" level="project" />
+<<<<<<< HEAD
     <orderEntry type="module-library">
       <library name="Maven: com.alibaba:jconsole:1.8.0">
         <CLASSES>
@@ -89,6 +90,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+=======
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
     <orderEntry type="module" module-name="pinyougou_pojo" />
     <orderEntry type="module" module-name="pinyougou_sellergoods_interface" />
   </component>

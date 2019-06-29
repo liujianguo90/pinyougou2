@@ -11,6 +11,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="pinyougou_pojo" />
     <orderEntry type="library" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
+<<<<<<< HEAD
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.28" level="project" />
+=======
+>>>>>>> afdb8bc70c0a089d2d025afda5d11c90ab356c0e
   </component>
 </module>
