@@ -21,6 +21,7 @@ import java.util.List;
 @RequestMapping("/brand")
 public class BrandController {
 
+
 	@Reference
 	private BrandService brandService;
 
@@ -33,6 +34,7 @@ public class BrandController {
 	public Result submitCheck(int[] ids){
 		brandService.submitCheck(ids);
 		return new Result(true,"提交成功");
+
 	}
 	/**
 	 * 返回全部列表
